@@ -1,7 +1,8 @@
 import peewee as pv
+from playhouse import signals
 from playhouse.shortcuts import model_to_dict
 
-from .util import zh_split
+from .util import zh_split, get_freq
 from .dir import BASE
 
 database = pv.SqliteDatabase(str(BASE.joinpath('zhvocab.db')))
@@ -19,7 +20,7 @@ class FilledTextField(pv.TextField):
             return value.strip()
 
 
-class BaseModel(pv.Model):
+class BaseModel(signals.Model):
     class Meta:
         database = database
 
@@ -39,6 +40,7 @@ class Vocab(BaseModel):
     traditional = ZhListField(null=True)
     japanese = ZhListField(null=True)
     related = ZhListField(null=True)
+    frequency = pv.FloatField(null=True)
     _tags = pv.ManyToManyField(Tag, backref='_vocabs')
 
     @property
@@ -55,3 +57,9 @@ class Vocab(BaseModel):
 
 
 VocabTag = Vocab._tags.get_through_model()
+
+
+@signals.pre_save(sender=Vocab)
+def vocab_pre_save(model_class, instance, created):
+    if not instance.frequency:
+        instance.frequency = get_freq(instance.simplified)

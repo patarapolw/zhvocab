@@ -1,15 +1,15 @@
-english,simplified,traditional,pinyin,japanese,related
-to fry,煎,,jiān,,
-to stir-fry,炒,,chǎo,,
-to deep-fry,油炸,,yóuzhá,,
-to boil,煮,,zhǔ,,
-to steam,蒸,,zhēng,,
+english,simplified,traditional,pinyin,japanese,related,frequency
+chicken,鸡,雞,jī,,鸡蛋，鸡肉，母鸡，公鸡,53.7
+to stir-fry,炒,,chǎo,,,28.2
 "to roast
-to grill",烤,,kǎo,,
-to stew,炖,,dùn,,
-duck,鸭,,yā,,烤鸭
-chicken,鸡,雞,jī,,鸡蛋，鸡肉，母鸡，公鸡
-salapao,包子,,bāozi,,
-dumpling,饺子,,jiǎozi,,
-spring rolls,春卷,,chūnjuǎn,,
-tofu,豆腐,,dòufu,,
+to grill",烤,,kǎo,,,24.5
+to boil,煮,,zhǔ,,,24.0
+duck,鸭,,yā,,烤鸭,18.2
+tofu,豆腐,,dòufu,,,11.2
+to fry,煎,,jiān,,,8.71
+to steam,蒸,,zhēng,,,7.76
+dumpling,饺子,,jiǎozi,,,4.37
+to stew,炖,,dùn,,,4.07
+to deep-fry,油炸,,yóuzhá,,,3.63
+spring rolls,春卷,,chūnjuǎn,,,2.86
+salapao,包子,,bāozi,,,2.34

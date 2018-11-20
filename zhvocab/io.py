@@ -27,5 +27,6 @@ def import_csv():
                 db_vocab.traditional = row['traditional']
                 db_vocab.japanese = row['japanese']
                 db_vocab.related = row['related']
+                db_vocab.frequency = row.get('frequency')
                 db_vocab.tags = row.get('tags', '') + '\n' + csv_filename.stem
                 db_vocab.save()
