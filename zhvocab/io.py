@@ -11,7 +11,6 @@ def import_csv():
 
             reader = csv.DictReader(f)
             for row in reader:
-                print(row)
                 db_vocab = db.Vocab.get_or_none(
                     simplified=row['simplified']
                 )
