@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "zhvocab"
+version = "0.1.0"
+description = ""
+authors = ["patarapolw <patarapolw@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "*"
+peewee = "^3.7"
+
+[tool.poetry.dev-dependencies]
