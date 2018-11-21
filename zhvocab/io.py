@@ -5,9 +5,11 @@ from . import db
 
 
 def import_csv():
-    for csv_filename in BASE.joinpath('csv').glob('**/*.csv'):
+    csv_path = BASE.joinpath('csv')
+
+    for csv_filename in csv_path.glob('**/*.csv'):
         with csv_filename.open() as f:
-            print(csv_filename.stem)
+            filename_tag = str(csv_filename.relative_to(csv_path))
 
             reader = csv.DictReader(f)
             for row in reader:
@@ -23,9 +25,14 @@ def import_csv():
 
                 db_vocab.english = row['english']
                 db_vocab.pinyin = row['pinyin']
-                db_vocab.traditional = row['traditional']
-                db_vocab.japanese = row['japanese']
-                db_vocab.related = row['related']
-                db_vocab.frequency = float(row.get('frequency'))
-                db_vocab.add_tags(row.get('tags', '') + '\n' + csv_filename.stem)
+                db_vocab.traditional = row.get('traditional')
+                db_vocab.japanese = row.get('japanese')
+                db_vocab.related = row.get('related')
+
+                try:
+                    db_vocab.frequency = float(row.get('frequency'))
+                except ValueError:
+                    pass
+
+                db_vocab.add_tags(row.get('tags', '') + '\n' + filename_tag)
                 db_vocab.save()
