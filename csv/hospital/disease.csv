@@ -1,9 +1,14 @@
 english,simplified,traditional,pinyin,japanese,related,frequency
 stress / pressure,压力,,ya1 li4,,,126.0
 pregnant/to have conceived/gestation/pregnancy,怀孕,,huai2 yun4,,,36.3
+to accumulate/to involve or implicate/continuous/repeated,累,,lei3,,,33.9
 cancer,癌症,,ai2 zheng4,,,19.1
 to infect/contagious,传染,,chuan2 ran3,,,14.8
+cold (climate)/frigid/very cold,寒冷,,han2 leng3,,,11.7
+to bleed/to shed blood,流血,,liu2 xue4,,,11.5
 "to catch cold/(common) cold/CL:場|场[chang2],次[ci4]/(coll.) to be interested in (often used in the negative)/(Tw) to detest/can't stand",感冒,,gan3 mao4,,,10.2
+to cough/CL:陣|阵[zhen4],咳嗽,,ke2 sou5,,,10.0
+to tremble/to shake/to shiver,发抖,,fa1 dou3,,,8.91
 to vomit,呕吐,,ou3 tu4,,,8.71
 oversensitive/allergic/allergy,过敏,,guo4 min3,,,8.51
 diabetes/diabetes mellitus,糖尿病,,tang2 niao4 bing4,,,7.94
@@ -11,24 +16,37 @@ to have a high temperature (from illness)/to have a fever,发烧,,fa1 shao1,,,7.
 headache,头疼,,tou2 teng2,,,6.61
 high blood pressure/hypertension,高血压,,gao1 xue4 ya1,,,5.89
 flu/influenza,流感,,liu2 gan3,,,5.75
+to tire/tired,疲倦,,pi2 juan4,,,5.75
+farsighted/hyperopia or hypermetropia (farsightedness),远视,,yuan3 shi4,,,5.44
 pneumonia/inflammation of the lungs,肺炎,,fei4 yan2,,,5.37
+dizzy,头晕,,tou2 yun1,,,5.25
 to suffer from insomnia,失眠,,shi1 mian2,,,4.47
 leukemia,白血病,,bai2 xue4 bing4,,,4.17
 sexually transmitted disease/venereal disease,性病,,xing4 bing4,,,4.07
 asthma,哮喘,,xiao4 chuan3,,,3.72
 diarrhea/to have the runs,腹泻,,fu4 xie4,,,3.31
 smallpox/ceiling/stamen of corn/(old) snow/(dialect) sesame oil,天花,,tian1 hua1,,,3.24
+to become inflamed/inflammation,发炎,,fa1 yan2,,,3.02
 phlegm/spittle,痰,,tan2,,,2.88
 swelling/oedema/internal bruising,肿胀,,zhong3 zhang4,,,2.09
 to sneeze,打喷嚏,,da3 pen1 ti4,,,2.0
 to itch/to tickle,痒痒,,yang3 yang5,,,1.91
+shortsighted/nearsighted/myopia,近视,,jin4 shi4,,,1.91
 constipation/Taiwan pr. [bian4 bi4],便秘,,bian4 mi4,,,1.82
 syphilis,梅毒,,mei2 du2,,,1.78
 neuralgia (medicine),神经痛,,shen2 jing1 tong4,,,1.77
+food poisoning,食物中毒,,shi2 wu4 zhong4 du2,,,1.58
 bellyache/stomach pain,腹痛,,fu4 tong4,,,1.51
+hemorrhoid,痔疮,,zhi4 chuang1,,,1.35
 cataract,白内障,,bai2 nei4 zhang4,,,1.07
+indigestion,消化不良,,xiao1 hua4 bu4 liang2,,,0.919
+tuberculosis,肺核,,fèihé,,,0.751
 low blood pressure,低血压,,di1 xue4 ya1,,,0.729
 hangover,宿醉,,su4 zui4,,,0.589
+appetite 2,胃口好,,wèikǒuhǎo,,,0.573
+cerebral hemorrhage,脑出血,,nao3 chu1 xue4,,,0.571
+heart failure,心脏衰竭,,xīnzàngshuāijié,,,0.349
+appetite 1,有食欲,,yǒushíyù,,,0.331
 to have a runny nose,流鼻涕,,liu2 bi2 ti4,,,0.248
 to suppurate,脓化,,nónghuà,,,0.149
 tinea pedis / athlete's foot,足癣,,zu2 xuan3,,,0.094
@@ -36,5 +54,7 @@ conjunctivitis,结膜炎,,jie2 mo2 yan2,,,0.042
 urticaria/nettle rash/hives,荨麻疹,,xun2 ma2 zhen3,,,0.042
 poliomyelitis/infantile paralysis,小儿麻痹症,,xiao3 er2 ma2 bi4 zheng4,,,0.019
 peptic ulcer,消化性溃疡,,xiāohuàxìngkuìyáng,,,0.018
+appendicitis,盲肠炎,,mang2 chang2 yan2,,,0.018
 tonsillitis,扁桃体炎,,bian3 tao2 ti3 yan2,,,0.003
 tooth decay/dental caries/cavity,龋齿,,qu3 chi3,,,0.003
+cystitis,泌尿道感染,,mìniào dàogǎn rǎn,,,0.002
