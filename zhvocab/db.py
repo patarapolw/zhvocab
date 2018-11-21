@@ -47,12 +47,14 @@ class Vocab(BaseModel):
     def tags(self):
         return [t.name for t in self._tags]
 
-    @tags.setter
-    def tags(self, value):
-        for tag in zh_split(value):
-            Tag.get_or_create(name=tag)[0]._vocabs.add(self)
+    def add_tags(self, tags_str):
+        for tag in zh_split(tags_str):
+            try:
+                Tag.get_or_create(name=tag)[0]._vocabs.add(self)
+            except pv.IntegrityError:
+                pass
 
-    def to_dict(self):
+    def to_json(self):
         return model_to_dict(self, extra_attrs=['tags'])
 
 
