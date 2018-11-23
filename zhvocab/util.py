@@ -1,9 +1,9 @@
-import re
+import regex
 from wordfreq import word_frequency
 
 
 def zh_split(value):
-    return [x.strip() for x in re.split(r'[,，\n]', value) if x.strip()]
+    return regex.findall(r'\p{IsHan}+', value)
 
 
 def get_freq(word):
