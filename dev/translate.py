@@ -5,28 +5,27 @@ from zhvocab.util import get_freq, zh_split
 all_entries = []
 
 for vocab in zh_split('''
-紫苏
-竹笋
-小黄瓜
-香菇
-柠檬草
-柠檬
-小玉米
-西红柿
-洋葱
-青菜
-芹菜
-茄子
-秋葵
-青菜花
-豌豆
-丝瓜
-芫荽
-柿子椒
-甜椒
-蒜头
-南瓜
-木耳
+白菜
+包心菜
+菠菜
+草菇
+菜花
+葱
+冬瓜
+豆角
+豆芽
+芥蓝菜
+红萝卜
+胡椒
+红葱头
+茼蒿
+金针菇
+姜
+韭菜
+苦橙
+空心菜
+萝卜
+辣椒
 '''):
     entry = [''] * 7
     entry[1] = vocab
@@ -38,7 +37,7 @@ for vocab in zh_split('''
         entry[2] = '，'.join(r.traditional for r in results if r.traditional and r.traditional != vocab)
         entry[3] = '，'.join(r.pinyin for r in results if r.pinyin)
 
-    all_entries.append([entry[3]])
+    all_entries.append([entry[0]])
 
 # all_entries = sorted(all_entries, key=lambda x: -float(x[6]))
 
